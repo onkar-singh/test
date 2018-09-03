@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.bb {background: url(file:///C:/Users/Onkar%20Singh/Desktop/career.aspx_files/questions-sprite.png) no-repeat scroll 0 0 transparent;color: #FFFFFF;cursor: pointer;float: left;font-weight: bold;height: 47px;
+    line-height: 45px;margin: 3px;text-align: center;width: 50px;}
+    .bb1 {background: url(fullsc.png) no-repeat scroll 0 0 transparent;color: #FFFFFF;cursor: pointer;float: left;font-weight: bold;height: 41px;
+    line-height: 45px;margin: 3px;text-align: center;width: 41px;}
+    .bb11{background-position: 0px 0px;color: #FFFFFF;/*border: 1px solid black;*/}
+    .bb12{background-position: -43px 0px;color: #FFFFFF;/*border: 1px solid black;*/}
+
+.b1{background-position: -4px -5px;color: #FFFFFF;}
+.b2{background-position: -56px -1px;color: #FFFFFF;}
+.b3{background-position: -108px -2px;color: #FFFFFF;}
+.b4{background-position: -157px -2px;color: #000;}
+.b5{background-position: -205px -2px;color: #FFFFFF;}
+.b6{background-position: -204px -49px;color: #FFFFFF;}
+.bg1{background-position: -4px -126px;}
+.bg2{background-position: -57px -127px;}
+.bg3{}
+.bg4{}
+.bg5{}
+.bg6{background-position: -203px -49px;}
+span span {animation:span 0.9s infinite;}
+@keyframes span {
+    0%{  color: #000;    }
+    49%{ color: transparent; }
+    50%{ color: transparent; }
+    99%{ color:transparent;  }
+    100%{color: #000;    }
+}
+
+</style>
+<div class="bb1 bb11"></div>
+<div class="bb1 bb12"></div>
+<div class="bb b1">100</div>
+<div class="bb b2">200</div>
+<div class="bb b3">300</div>
+<div class="bb b4">400</div>
+<div class="bb b5">500</div>
+<div class="bb b6">600</div>
+<span id="r" style="font-size: 40px;"></span>
+<script>window.onload=function(){
+      var start=Date.now(),r=document.getElementById('r');
+      (function f(){
+      var diff=Date.now()-start,ns=(((72e5-diff)/1e3)>>0),m=(ns/60)>>0,s=ns-m*60;
+      r.innerHTML="Close in "+m+"<span>"+":"+"</span>"+((''+s).length>1?'':'0')+s;
+      if(diff>72e5){
+        start = Date.now();
+        r = document.getElementById('r').innerText="0:00";
+      }
+      setTimeout(f,1e3);
+      })();
+}</script>               <!-- 60000=1min. 72e5=120min. -->
+
+<span id="d1" style="font-size: 40px;"></span>
+
+<!-- <script src="time.js"></script>
+ -->
+
+<style>
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+  background-color: yellow;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+  background-color: yellow;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+  background-color: yellow;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: yellow;
+}
+
+/* Style the button */
+button {
+  padding: 20px;
+  font-size: 20px;
+}
+</style>
+
+<button id="hgyuh" onclick="opok(mklnj++)">Open Fullscreen</button>
+<!-- <button onclick="closeFullscreen(mklnj++);">Close Fullscreen</button> -->
+
+<script>
+var mklnj=0;
+function opok(jh) {
+var elem = document.documentElement;
+  if (jh % 2 == 0) {
+     document.getElementById("hgyuh").innerHTML="Close Fullscreen";
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }} else {
+    document.getElementById("hgyuh").innerHTML="Open Fullscreen";
+    if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }}
+}
+
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+</script>
+
+
+<style type="text/css">
+.klo{background-color: black;padding: 5px 2px 5px 2px;font-size: 26px;color: white;cursor:pointer;}
+</style>
+<span id="jkl" onclick="evod(bl++)" class="close klo">❯</span>
+<script type="text/javascript">
+  var bl=0;
+  function evod(jh) {
+    if (jh % 2 == 0) {document.getElementById("jkl").innerText="❮";}
+    else{document.getElementById("jkl").innerText="❯";}}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  width:50%;
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home" class="active">Review & Next</a>
+  <a href="#news">Save & Next</a>
+  <a href="#contact">Clear</a>
+  <a href="#contact" style="color:red;">Submit</a>
+</div>
+
+<style type="text/css">
+  .klo{background-color: black;padding: 5px 2px 5px 2px;font-size: 26px;color: white;}
+</style>
+
+
+<span id="jkl" onclick="evod(bl++)" class="close klo">❯</span>
+<script type="text/javascript">
+  var bl=0;
+  function evod(jh) {
+    if (jh % 2 == 0) {document.getElementById("jkl").innerText="❮";}
+    else{document.getElementById("jkl").innerText="❯";}}
+
+</script>
+
+</body>
+</html>
